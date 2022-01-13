@@ -9,10 +9,12 @@ public class DoubleVarTest {
 		//1. 선언
 		float p1;
 		double p2;
+		float p3;
 		
 		//2. 데이터 저장
 		p1 = 3.1415f;     //float 형식으로 데이터를 표시할 때에서는 f(F)를 표기합니다.
 		p2 = 3.1415;
+		p3 = 3.141562f;
 		
 		//3. 변수 사용 : 연산
 		p2 = p2 * 1.1;
