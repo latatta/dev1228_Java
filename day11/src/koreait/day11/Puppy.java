@@ -20,4 +20,7 @@ public class Puppy extends Animal {
 		System.out.println("🐶🐶🐶 멍멍");
 	}
 	
+	public void test() {
+		
+	}
 }
