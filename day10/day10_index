@@ -1,0 +1,29 @@
+day10 순서
+
+1. day9 문제풀이 NumberGame0.java
+2. DoWhileTest.java
+3. day9 문제풀이 NumberGame1.java
+4. MyClass1.java / MyClass1Test.java
+5. MyClass2.java / MyClass2Test.java
+6. MyClass2Test.java - koreait.day10a 패키지
+7. MyClass3.java / MyClass3Test.java
+8. NumberGame.java
+9. NumberGameStart.java
+10. NumberGameStarttogether.java
+
+11. 오늘의 복습 문제 : 배열, 클래스	-> 5시 40분에 파일 제출
+	MyRedPen.java
+
+*실행화면*
+------------------------------------
+빨간펜 수학 2자리 덧셈 문제 풀기
+------------------------------------
+시작합니다.
+문제 1. 23 + 56 = 답 입력 ->
+문제 2. 33 + 19 = 답 입력 ->
+		:
+문제 10. 28 + 32 = 답 입력 ->
+------------------------------------
+채점합니다. 맞은 갯수 ... (.. 점)
+
+추가 기능 : 틀린문제 다시보기(배열), 계속하시겠습니까?(반복)
