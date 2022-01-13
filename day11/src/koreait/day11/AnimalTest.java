@@ -28,6 +28,7 @@ public class AnimalTest {
 		Cat cat = new Cat();
 		cat.setName("네로");
 		cat.sound();
+		cat.test();
 		
 		
 	}
