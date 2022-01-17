@@ -9,6 +9,11 @@ public class ATriangle extends AShape{
 	public double getArea() {	
 		return width*height/2;
 	}
+	
+	// 테스트용 메소드
+	public String triangle() {
+		return "triangle - 삼각형";
+	}
 
 	public int getHeight() {
 		return height;

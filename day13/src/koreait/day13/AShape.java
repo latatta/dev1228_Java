@@ -7,7 +7,7 @@ public abstract class AShape {	// 추상클래스
 	
 	private String shapeName;
 	
-	// 추상메소드 선언 -> 자식메소드가 구체화합니다.(오버라이딩보다는 implements(구현)로 불립니다.)
+	// 추상메소드 선언(형식만 지정) -> 자식메소드가 구체화합니다.(오버라이딩보다는 implements(구현)로 불립니다.)
 	public abstract double getArea();	// { } 메소드 몸체가 없고 선언만 합니다.
 	
 	// getter, setter - 자식클래스가 상속받는 메소드
