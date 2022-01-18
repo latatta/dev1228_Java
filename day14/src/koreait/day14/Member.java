@@ -23,6 +23,11 @@ public class Member {
 		
 	}
 
+	@Override
+	public String toString() {
+		return "[name=" + name + ", age=" + age + "]";
+	}
+
 	public String getName() {
 		return name;
 	}
