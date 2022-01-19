@@ -74,7 +74,7 @@ public class MyRedPenV4 {
 			}
 		} //for end
 		
-		return 0;
+		return cnt;
 	}
 	
 
