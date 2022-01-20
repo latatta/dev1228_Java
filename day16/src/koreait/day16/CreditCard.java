@@ -2,6 +2,7 @@ package koreait.day16;
 
 public abstract class CreditCard {
 	
+	// **부모클래스는 자식클래스가 사용하도록 protected로 합니다.
 	protected String owner;
 	protected int limit, payTotal;
 	
