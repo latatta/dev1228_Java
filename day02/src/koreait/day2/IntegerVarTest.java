@@ -37,7 +37,7 @@ public class IntegerVarTest {   //정수를 저장하는 변수 연습합니다.
     	//short 연산시 주의
     	short result;
 //    	result = n2 + 100;		// 오류 : 100 은 기본적으로 int 형식 4바이트이고
-    			// n2는 short 인데 정수의 사칙연산 결과는 4바이트 입니다. 
+    							// n2는 short 인데 정수의 사칙연산 결과는 4바이트 입니다. 
     	int result2;
     	result2 = n2 + n2;  //32767 + 32767 =? 정상적으로 int 에 저장할수 있음.
     	
