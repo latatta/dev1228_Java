@@ -40,7 +40,6 @@ public abstract class Animal {		// abstract 클래스는 abstract 메소드를 �
 	}
 	
 	
-	
 	// getter, setter
 	public String getColor() {
 		return color;
