@@ -19,8 +19,10 @@ public class CreditCardTest {
 		System.out.println("================================================");
 		
 		System.out.println("모모 학생이 점심 돈까스 : 5000원 사용");
-		momo.pay(5000);
+		if (momo.pay(5000) == 0) System.out.println("사용한도가 초과되었습니다. 결제 승인 거부!!");
+		else System.out.println("결제 승인 완료");
 		System.out.println(momo);
+		
 		
 		System.out.println("\n사나가 스마트tv 구매 : 50만원 사용");
 		sana.pay(500000);
@@ -31,7 +33,8 @@ public class CreditCardTest {
 		System.out.println(sana);
 		
 		System.out.println("\n모모 학생이 스마트폰 구매 : 20만원 사용");
-		momo.pay(200000);
+		if (momo.pay(200000) == 0) System.out.println("사용한도가 초과되었습니다. 결제 승인 거부!!");
+		else System.out.println("결제 승인 완료");
 		System.out.println(momo);
 		
 	}

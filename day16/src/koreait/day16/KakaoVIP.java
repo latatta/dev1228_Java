@@ -19,21 +19,21 @@ public class KakaoVIP extends CreditCard{
 		DecimalFormat df = new DecimalFormat("###,###,###,###");
 		
 		return owner + "님, 이번달 결제예정금액 " + df.format(getPayTotal()) 
-		+ "원 입니다.\n[이용한도 " + df.format(getLimit()) + "원]";
+		+ "원 입니다.\n[이용한도 " + df.format(getLimit()) + "원, 포인트 : " + point + "]";
 	}
 	
 	@Override
 	public int pay(int money) {
 		payTotal+=money;					
-		if (money > limit) limit += 5000000;	// 추가 현재 이용금액 +money가 limit보다 크다면 자동으로 한도 5000000원 증가
-		this.point+=money*0.01;					// VIP카드는 포인트가 있고 포인트에 사용금액 0.01% 추가
+		if (money > limit) upLimit(5000000);	// 추가 현재 이용금액 +money가 limit보다 크다면 자동으로 한도 5000000원 증가
+		this.point += money*0.01;					// VIP카드는 포인트가 있고 포인트에 사용금액 0.01% 추가
 		return money;
 	}
 	
 	@Override
 	public int upLimit(int plus) {
 		limit +=plus;
-		System.out.println("고객님은 제한없이 한도 조정 가능합니다.[" + limit + "]입니다.");
+		System.out.println("고객님은 제한없이 한도 조정 가능합니다. 한도 [" + limit + "원]입니다.");
 		return plus;
 	}		
 }
