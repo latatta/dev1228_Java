@@ -1,6 +1,7 @@
 package practice_quiz;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class StudentScoreTest2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		StudentScore[] stus = new StudentScore[10];
+		ArrayList<StudentScore> stus = new ArrayList<>(10);
 		Random r = new Random();
 		int max =100, min = 10;
 		
@@ -23,11 +24,11 @@ public class StudentScoreTest2 {
 			int kor = r.nextInt(max - min + 1) + min;
 			int eng = r.nextInt(max - min + 1) + min;
 			int sci = r.nextInt(max - min + 1) + min;
-			stus[i] = new StudentScore(i + 1, kor, eng, sci);;
+			stus.add(new StudentScore(i + 1, kor, eng, sci));
 			
 			System.out.println("국어, 영어, 과학 점수가 자동으로 입력되었습니다. 학생이름을 입력해 주세요.");
 			System.out.print("이름 -> ");
-			stus[i].setName(sc.nextLine());
+			stus.get(i).setName(sc.nextLine());
 		}
 		
 		System.out.println(":::::저장된 성적데이터를 확인하세요.:::::");
@@ -46,20 +47,20 @@ public class StudentScoreTest2 {
 		}
 		
 		System.out.println("::::: 총점 기준 최우수 학생 이름과 점수입니다. :::::");
-		int max_sum = stus[0].sum();
+		int max_sum = stus.get(0).sum();
 		// 문제 5) 최우수 학생을 찾기 위한 반복 명령문을 작성하세요. 변수는 아래 출력문을 참고하여 선언하세요.
 		int max_idx = 0;
 		for (int i=0; i<num; i++) {
-			if (stus[i].sum() > max_sum) {
-				max_sum = stus[i].sum();
+			if (stus.get(i).sum() > max_sum) {
+				max_sum = stus.get(i).sum();
 				max_idx = i;
 			}
 		}
 		
 				
-		System.out.println("최우수 학생 : " + stus[max_idx].getName() + 
-				"(총점 :" + stus[max_idx].sum()
-				+ ", 평균 :" + df.format(stus[max_idx].avg()) + ")");
+		System.out.println("최우수 학생 : " + stus.get(max_idx).getName() + 
+				"(총점 :" + stus.get(max_idx).sum()
+				+ ", 평균 :" + df.format(stus.get(max_idx).avg()) + ")");
 		
 	}
 
