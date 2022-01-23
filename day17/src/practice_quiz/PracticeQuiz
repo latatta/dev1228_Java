@@ -1,0 +1,44 @@
+문제 1.
+	@Override
+	public String toString() {
+		return "[번호 : " + num + "  이름 : " + name + "]  국어 : " + korean + 
+				"  영어 : " + english + "  과학 : " + science;
+	}
+
+
+
+=====================================================
+문제 2.
+	int num = Integer.parseInt(sc.nextLine());
+	
+
+=====================================================
+문제 3.
+	int kor = r.nextInt(max - min + 1) + min;
+	int eng = r.nextInt(max - min + 1) + min;
+	int sci = r.nextInt(max - min + 1) + min;
+	stus[i] = new StudentScore(i + 1, kor, eng, sci);;
+			
+=====================================================
+뮨제 4.
+	try {
+		System.out.print(score);
+		System.out.println("   -총점 : " + score.sum() + 
+				"  평균 : " + df.format(score.avg()));
+						
+	} catch (NullPointerException e) {
+		break;
+	}
+			
+=====================================================
+문제 5.
+	int max_idx = 0;
+	for (int i=0; i<num; i++) {
+		if (stus[i].sum() > max_sum) {
+			max_sum = stus[i].sum();
+			max_idx = i;
+		}
+	}
+
+			
+			
