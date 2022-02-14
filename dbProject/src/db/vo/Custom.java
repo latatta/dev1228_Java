@@ -11,6 +11,9 @@ public class Custom {
 	private int age;
 	private Date reg_date;
 	
+	public Custom() {
+	}
+
 	public Custom(String custom_id, String name, String email, int age, Date reg_date) {
 		super();
 		this.custom_id = custom_id;
